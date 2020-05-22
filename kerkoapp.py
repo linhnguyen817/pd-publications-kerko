@@ -22,4 +22,4 @@ app.config['KERKO_COMPOSER'] = Composer()
 
 babel = Babel(app)
 bootstrap = Bootstrap(app)
-app.register_blueprint(kerko_blueprint, url_prefix='')
+app.register_blueprint(kerko_blueprint, url_prefix='/bibliography')
