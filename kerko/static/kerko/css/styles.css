@@ -73,3 +73,50 @@ main {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
+
+a {
+  color: rgb(106, 142, 50);
+}
+  
+a:hover {
+color: #476120;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2, .h2 {
+  font-size: 1.7rem;
+}
+
+.btn-primary {
+background-color: #7BA638;
+border-color: #7BA638;
+}
+
+.btn-primary:hover {
+background-color: #587828;
+border-color: #587828;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+box-shadow: 0 0 0 0.2rem #587828;
+}
+
+.page-link {
+color: #7BA638;
+}
+
+.page-link:hover {
+color: #587828;
+}
+
+.page-item.active .page-link {
+background-color: #7BA638;
+border-color: #7BA638;
+}
+
+.bg-dark {
+background-color: #7BA638 !important;
+}
