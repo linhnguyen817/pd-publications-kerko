@@ -2,10 +2,16 @@ from flask import Flask
 from kerko.composer import Composer
 from flask_babelex import Babel
 from flask_bootstrap import Bootstrap
+from flask import redirect, url_for
 from kerko import blueprint as kerko_blueprint
 
 
 app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return redirect(url_for('kerko.search'))
+
 app.config['SECRET_KEY'] = 'K#d{c^#KgD=s.Kq'  # Replace this value.
 app.config['KERKO_ZOTERO_API_KEY'] = 'DUTwl21GgxVc74bGODObxDut'  # Replace this value.
 app.config['KERKO_ZOTERO_LIBRARY_ID'] = '5778088'  # Replace this value.
