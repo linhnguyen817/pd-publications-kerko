@@ -256,7 +256,7 @@ building a minimal app, let's call it `hello_kerko.py`, to get you started.
    the following shell commands:
 
    ```bash
-   export FLASK_APP=hello_kerko.py
+   export FLASK_APP=kerkoapp.py
    flask kerko sync
    ```
 
