@@ -19,6 +19,9 @@ app.config['KERKO_ZOTERO_LIBRARY_ID'] = '5778088'  # Replace this value.
 app.config['KERKO_ZOTERO_LIBRARY_TYPE'] = 'user'  # Replace this value if necessary.
 app.config['KERKO_DATA_DIR'] = 'data/kerko'
 app.config['KERKO_COMPOSER'] = Composer()
+app.config['KERKO_ZOTERO_WAIT'] = '10'
+app.config['KERKOAPP_COLLECTION_FACETS']= 'LKGKEMQ6:110:Positive Deviance Publications'
+app.config['KERKOAPP_EXCLUDE_DEFAULT_FACETS'] = 'facet_tag'
 
 babel = Babel(app)
 bootstrap = Bootstrap(app)
