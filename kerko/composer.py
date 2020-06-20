@@ -9,8 +9,8 @@ from whoosh.query import Prefix, Term
 from whoosh.support.charset import accent_map
 from whoosh.util.text import rcompile
 
-from flask import current_app
-from kerko.specs import CollectionFacetSpec
+# from flask import current_app
+# from kerko.specs import CollectionFacetSpec
 
 from . import codecs, extractors, renderers
 from .specs import (
@@ -38,8 +38,8 @@ class Composer:
             whoosh_language='en',
             exclude_default_scopes=None,
             exclude_default_fields=None,
-            exclude_default_facets=['facet_tag'],
-            collection_spec=[('LKGKEMQ6', '110', 'Positive Deviance Publications')],
+            # exclude_default_facets=['facet_tag'],
+            # collection_spec=[('LKGKEMQ6', '110', 'Positive Deviance Publications')],
             exclude_default_sorts=None,
             exclude_default_citation_formats=None,
             exclude_default_badges=None,
@@ -184,7 +184,8 @@ class Composer:
             self.mime_types = mime_types
         self.init_default_scopes(exclude_default_scopes)
         self.init_default_fields(exclude_default_fields)
-        self.init_default_facets(exclude_default_facets, collection_spec)
+        self.init_default_facets(exclude_default_facets)
+        # self.init_default_facets(exclude_default_facets, collection_spec)
         self.init_default_sorts(exclude_default_sorts)
         self.init_default_citation_formats(exclude_default_citation_formats)
         self.init_default_badges(exclude_default_badges)
@@ -1309,16 +1310,16 @@ class Composer:
 
     def init_default_facets(self, exclude=None, collection_spec=None):
 
-        # Add collection facets.
-        if collection_spec:
-            for collection_key, weight, title in collection_spec:
-                self.add_facet(
-                    CollectionFacetSpec(
-                        title=title,
-                        weight=int(weight),
-                        collection_key=collection_key,
-                    )
-                )
+        # # Add collection facets.
+        # if collection_spec:
+        #     for collection_key, weight, title in collection_spec:
+        #         self.add_facet(
+        #             CollectionFacetSpec(
+        #                 title=title,
+        #                 weight=int(weight),
+        #                 collection_key=collection_key,
+        #             )
+        #         )
 
         if exclude is None:
             exclude = []
