@@ -12,6 +12,25 @@ but easy to use web interface for end-users of the bibliography, and a
 well-established and powerful bibliographic reference management tool for
 individuals or teams working on the bibliography's content.
 
+# SET UP
+brew install python3
+cd kerko-master
+pip install flask
+pip install kerko
+python3 -m venv env
+source env/bin/activate
+
+
+# UPDATING BIB
+DELETE ALL TRASH
+SYNC ZOTERO LIBRARY
+
+source env/bin/activate
+export FLASK_APP=kerkoapp.py
+flask kerko sync
+git add .
+git commit
+git push
 
 ## How it works
 
