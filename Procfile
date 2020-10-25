@@ -1,1 +1,1 @@
-web: gunicorn kerkoapp:app
+web: gunicorn kerkoapp:app -b xx.xxx.xxx.xx:8000
