@@ -15,8 +15,8 @@ individuals or teams working on the bibliography's content.
 # SET UP
 brew install python3
 cd kerko-master
-pip3 install flask
-pip3 install kerko
+pip install flask
+pip install kerko
 python3 -m venv env
 source env/bin/activate
 
