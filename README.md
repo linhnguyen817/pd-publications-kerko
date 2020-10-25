@@ -37,6 +37,27 @@ otherwise you should probably consider building a custom application. In a
 custom application, the Kerko-powered bibliography might be just one section of
 a larger website.
 
+## Set up
+```brew install python3
+cd kerko-master
+pip install flask
+pip install kerko
+python3 -m venv env
+source env/bin/activate```
+
+
+## Updating Bib
+- DELETE ALL TRASH
+- SYNC ZOTERO LIBRARY
+
+```source env/bin/activate
+export FLASK_APP=kerkoapp.py
+flask kerko sync
+git add .
+git commit
+git push```
+
+
 
 ## Demo site
 
