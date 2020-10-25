@@ -19,6 +19,8 @@
                 </script>
             {%- endblock head_scripts %}
             {%- block favicon %}
+                <link rel="shortcut icon" href="{{ url_for('static', filename='pd_logo.ico') }}" type="image/x-icon">
+                link rel="icon" href="{{ url_for('static', filename='pd_logo.ico') }}" type="image/x-icon">
             {%- endblock favicon %}
         </head>
     {%- endblock head %}
