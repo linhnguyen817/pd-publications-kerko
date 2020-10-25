@@ -1,1 +1,1 @@
-web: gunicorn kerkoapp:app -b xx.xxx.xxx.xx:8000
+web: gunicorn --bind 0.0.0.0:$PORT kerkoapp:app
