@@ -183,7 +183,7 @@ class Composer:
             self.mime_types = mime_types
         self.init_default_scopes(exclude_default_scopes)
         self.init_default_fields()
-        # self.init_default_facets(exclude_default_facets, collection_spec)
+        self.init_default_facets(exclude_default_facets)
         self.init_default_sorts(exclude_default_sorts)
         self.init_default_citation_formats(exclude_default_citation_formats)
         self.init_default_badges(exclude_default_badges)
