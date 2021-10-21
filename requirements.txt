@@ -1,5 +1,5 @@
 appdirs==1.4.4
-Babel==2.7.0
+Babel==2.9.1
 bibtexparser==1.1.0
 Bootstrap-Flask==1.1.0
 certifi==2019.9.11
